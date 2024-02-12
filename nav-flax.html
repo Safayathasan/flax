@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* Styles for the navigation menu */
+.navigation {
+    display: flex; /* Establishes a flex container */
+    flex-flow: row wrap; /* Items will be displayed in a row and wrap if necessary */
+    justify-content: flex-end; /* Aligns items to the right side of the container */
+    list-style: none; /* Removes default list styling */
+    margin: 0; /* Removes default margin */
+    background: deepskyblue; /* Sets background color */
+}
+
+/* Styles for the navigation links */
+.navigation a {
+    text-decoration: none; /* Removes underline from links */
+    display: block; /* Displays links as block elements */
+    padding: 1em; /* Adds padding around the links */
+    color: white; /* Sets text color to white */
+}
+
+/* Styles for hover effect on navigation links */
+.navigation a:hover {
+    background: #1565C0; /* Changes background color on hover */
+}
+
+/* Media query for screens with a maximum width of 800 pixels */
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: space-around; /* Aligns items evenly along the main axis */
+    }
+}
+
+/* Media query for screens with a maximum width of 600 pixels */
+@media all and (max-width: 600px) {
+    .navigation {
+        flex-flow: column wrap; /* Displays items in a column and wraps if necessary */
+    }
+}
+    </style>
+</head>
+<body>
+    <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+</body>
+</html>
